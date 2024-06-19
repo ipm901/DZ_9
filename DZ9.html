@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     h1{
+        color: blue;
+        text-align: center;
+        font-size: 30px;
+     }   
+     ul{
+       
+        margin-left: 70px;
+     }
+.text{
+    font-size: 20px;
+    color: rgb(0, 0, 12);
+    font-weight: bold;
+}
+h2{
+    color: blue;
+        text-align: center;
+        font-size: 30px;
+}
+.fon{
+    background-color: rgb(166, 173, 173);
+    margin-left:100px;
+    margin-right:100px;
+}
+.fon2{
+    background-color: white;
+    margin-left:200px;
+    margin-right:200px;
+}
+form {
+ width: 250px;
+ margin-left: 20px;
+border-color: rgb(210, 216, 210);
+color: rgb(182, 228, 182);
+ background-color: white;
+ border-radius: 4px;
+ }
+ .form1{
+    margin-left: 20px;
+    border-color: green;
+    color: rgb(182, 228, 182);
+ }
+
+ .form2{
+    margin-left: 20px;
+    border-color: red;
+    color: rgb(240, 158, 158);
+ }
+ .toggle {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 24px;
+        }
+         
+        /* Скрыть ввод флажка */
+        .toggle input {
+            display: none;
+            
+        }
+         
+        /* Опишите внешний вид и положение слайдера. */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color:white;
+            transition: .4s;
+            border-radius: 4px;
+            border: 1px solid rgb(13, 248, 13);
+            
+           
+        }
+         
+        /* Опишите расположение
+и внешний вид белого шара в слайдере. */
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 30px;
+            left: 3px;
+            bottom: 2px;
+            background-color: rgb(13, 248, 13);
+            transition: .4s;
+            border-radius: 20%;
+            
+        }
+         
+        /* После установки флажка измените цвет фона слайдера на
+зеленый.*/
+        input:checked+.slider {
+            background-color: green;
+        }
+         
+        /* Когда флажок установлен, сдвиньте
+белый шарик вправо внутри ползунка. */
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+        .ots{
+            margin-left: 30px;
+            
+        }
+        .op_text{
+            font-size: 15px;
+            margin-left: 10px;
+           
+        }
+        .op_text1{
+            font-size: 20px;
+            margin-left: 3%;
+            font-weight: bold;
+            margin-left: 0%;
+           
+        }
+        .toggle1 {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 24px;
+        }
+         
+        /* Скрыть ввод флажка */
+        .toggle1 input {
+            display: none;
+            
+        }
+         
+        /* Опишите внешний вид и положение слайдера. */
+        .slider1 {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color:white;
+            transition: .4s;
+            border-radius: 4px;
+            border: 1px solid red;
+           
+        }
+         
+        /* Опишите расположение
+и внешний вид белого шара в слайдере. */
+        .slider1:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 30px;
+            left: 3px;
+            bottom: 2px;
+            background-color: rgb(236, 95, 95);
+            transition: .4s;
+            border-radius: 20%;
+        }
+         
+        /* После установки флажка измените цвет фона слайдера на
+зеленый.*/
+        input:checked+.slider1 {
+            background-color: red;
+        }
+         
+        /* Когда флажок установлен, сдвиньте
+белый шарик вправо внутри ползунка. */
+        input:checked+.slider1:before {
+            transform: translateX(26px);
+        }
+        .but1{
+            background-color:rgb(14, 211, 63) ;
+            width: 70px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but1:hover{
+            background-color:rgb(7, 134, 56) ;
+            width: 70px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+       
+        .but2{
+            background-color:rgb(7, 114, 33) ;
+            width: 70px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but2:hover{
+            background-color:rgb(12, 194, 57) ;
+            width: 70px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but3{
+            background-color:rgb(221, 78, 126) ;
+            width: 70px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but3:hover{
+            background-color:rgb(155, 23, 67) ;
+            width: 70px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but4{
+            background-color:rgb(153, 18, 63) ;
+            width: 70px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but4:hover{
+            background-color:rgb(207, 14, 78) ;
+            width: 70px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but5{
+            background-color:rgb(121, 114, 116) ;
+            width: 80px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but5:hover{
+            background-color:rgb(27, 14, 18) ;
+            width: 80px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+        .but6{
+            background-color:rgb(0, 255, 34) ;
+            width: 27px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            
+        }
+        .but6:hover{
+            background-color:rgb(25, 126, 38) ;
+            width: 27px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            
+        }
+        .but7{
+            background-color:red ;
+            width: 27px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            
+        }
+        .but7:hover{
+            background-color:rgb(214, 65, 65) ;
+            width: 27px;
+            height: 27px;
+            margin-left: 0px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            
+        }
+        .ots_tex{
+            margin-left: 0px;
+            width: 400px;
+            height: 100px;
+        }
+        .im1{
+            margin-left: -20px;
+        }
+        .im2{
+            margin-left: -20px;
+        }
+        [type="radio"] {
+  border: 0;    
+  height: 1px; margin: -1px;    
+  
+}
+
+[type="radio"] + span:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.25em;
+  border-radius: 1em;
+  border: 0.125em solid #fff; 
+  margin-right: 0.75em;
+ 
+}
+
+[type="radio"]:checked + span:before {
+  background: green;
+  box-shadow: 0 0 0 0.25em #000;
+}
+    </style>
+</head>
+<body>
+   <div class="fon2">
+    <h1>Задание 2</h1>
+    <p class="text">Реализовать мини-библиотеку со стилями для разных элементов ввода данных.</p>
+<ul>
+<b>В библиотеке должны быть классы для:</b>
+<li><b>input</b> в нетронутом состоянии;</li>
+<li><b>input</b> с корректными данными;</li>
+<li><b>input</b> с некорректными данными;</li>
+<li><b>checkbox </b>– и в состоянии включен, и в состоянии выключен;</li>
+<li><b>radio button</b> – и в состоянии включен, и в состоянии выключен;</li>
+<li>кнопки (зеленые и красные) – в обычном состоянии и при
+    наведении мышкой на них;</li>
+<li>неактивная кнопка;</li>
+<li>круглые кнопки (зеленые и красные) с иконками вместо
+    текста;</li>
+<li><b>textarea.</b></li>
+</ul>
+Под <span>библиотекой </span>подразумевается отдельный css-файл только
+со стилями для элементов ввода.<br/>
+Для визуальной демонстрации элементов ввода расположите
+их на странице, как показано на скриншоте ниже.
+<h2>Пример конечного результата:</h2>
+<div class="fon">
+<div class="ots">
+<p class="op_text1">Inputs</p>
+    
+        <label>
+            <input type="text" value="Enter some text" class="form">
+            <input type="text" value="valid text" class="form1"><img src="icons_hw_module_10/valid.png" alt="v"  height="10px" class="im1">
+            <input type="text" value="invalid text" class="form2"><img src="icons_hw_module_10/invalid.png" alt="x" height="10px" class="im2">
+            
+            <p class="op_text1">Check boxes </p>
+            
+            <label class="toggle">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label><span class="op_text">Subscribe</span>
+
+            <label class="toggle1">
+                <input type="checkbox">
+                <span class="slider1"></span>
+            </label><span class="op_text">Subscribe</span>
+        
+        </label>
+   
+   <p class="op_text1">Radio buttons</p>
+   <span class="">Gender:</span>
+   <label for="male">
+    <input type="radio" value="male" name="quality" id="male" checked> <span>Male</span>
+  </label>
+
+  <label for="pretty">
+    <input type="radio" value="pretty" name="quality" id="pretty"> <span>Female</span>
+  </label>
+   <label for="radio2">Female</label><br>
+   <p class="op_text1">Buttons</p>
+   <div class="but1"> <button class="but1"> Active </button>  </div>
+   <div class="but2"> <button class="but2"> Hover </button>  </div>
+   <div class="but3">  <button class="but3"> Danger </button> </div>
+   <div class="but4">   <button class="but4">Hover  </button> </div>
+   <div class="but5">  <button class="but5"> Disabled  </button> </div>
+   <div class="but6">  <button class="but6"> +  </button> </div>
+   <div class="but7">  <button class="but7"> -  </button> </div>
+   <p class="op_text1">Textarea</p>
+   <textarea placeholder="Enter some text" class="ots_tex"></textarea>
+</div>
+</div>
+</div>
+</body>
+</html>
